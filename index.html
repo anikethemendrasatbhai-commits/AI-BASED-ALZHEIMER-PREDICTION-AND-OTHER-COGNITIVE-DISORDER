@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f35">
+  <title>MindCare Assess | Cognitive Wellness</title>
+  <meta name="description" content="A student-built educational demo for exploring memory, attention, and reasoning activities. Not a medical diagnostic tool.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="MindCare Assess home">
+      <span class="brand-mark">m</span><span>mindcare<span class="brand-light"> assess</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#home">Overview</a><a href="#tests">Activities</a><a href="#results">My results</a><a href="#learn">Learn</a>
+    </nav>
+    <a class="top-cta" href="#tests">Try an activity <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR COGNITIVE WELLNESS SPACE</div>
+        <h1>Make space for<br><em>a sharper mind.</em></h1>
+        <p class="hero-text">Explore short, friendly activities for memory, focus and reasoning. Go at your own pace and use your results as a learning tool—not a diagnosis.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#tests">Explore activities <span>→</span></a><a class="text-link" href="#learn">Understand cognitive health ↗</a></div>
+        <div class="hero-note"><span class="note-icon">✳</span><span>Designed for learning, reflection and cognitive-health awareness.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of a plant and brain">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card"><div class="art-sun"></div><div class="brain-shape">✿</div><div class="art-leaf leaf-a"></div><div class="art-leaf leaf-b"></div><div class="art-leaf leaf-c"></div><div class="art-stem"></div></div>
+        <div class="floating-card float-top"><span class="float-icon">✦</span><span><b>Small steps</b><small>Build awareness</small></span></div>
+        <div class="floating-card float-bottom"><span class="float-icon green">✓</span><span><b>Your pace</b><small>No time pressure</small></span></div>
+        <span class="art-caption">A little practice, a little curiosity.</span>
+      </div>
+    </section>
+
+    <section class="stats section-wrap">
+      <div><strong>03</strong><span>Interactive activities</span></div><div><strong>05–10 <small>min</small></strong><span>Suggested session length</span></div><div><strong>100%</strong><span>Educational demo</span></div>
+    </section>
+
+    <section class="section-wrap activities-section" id="tests">
+      <div class="section-heading"><div><div class="eyebrow">YOUR PRACTICE SPACE</div><h2>Choose an activity<span class="period">.</span></h2></div><p>Try a short activity, then review your score. These original tasks are for demonstration and self-reflection only.</p></div>
+      <div class="activity-grid">
+        <article class="activity-card memory-card"><div class="card-top"><span class="activity-icon">◉</span><span class="tag">MEMORY</span></div><h3>Word recall</h3><p>Remember a small group of words and recall them after a short pause.</p><div class="card-bottom"><span>~ 2 min</span><button class="arrow-button" data-start="memory" aria-label="Start word recall">↗</button></div></article>
+        <article class="activity-card focus-card"><div class="card-top"><span class="activity-icon">⌁</span><span class="tag">ATTENTION</span></div><h3>Focus finder</h3><p>Find the target symbol among similar-looking symbols.</p><div class="card-bottom"><span>~ 1 min</span><button class="arrow-button" data-start="focus" aria-label="Start focus finder">↗</button></div></article>
+        <article class="activity-card pattern-card"><div class="card-top"><span class="activity-icon">▦</span><span class="tag">REASONING</span></div><h3>Pattern puzzle</h3><p>Look for the rule in a number sequence and choose what comes next.</p><div class="card-bottom"><span>~ 2 min</span><button class="arrow-button" data-start="pattern" aria-label="Start pattern puzzle">↗</button></div></article>
+      </div>
+      <div class="notice"><span>ⓘ</span><p><b>Not a clinical assessment.</b> These original activities are not validated screening instruments and cannot diagnose or rule out dementia, Alzheimer’s disease or any other condition.</p></div>
+    </section>
+
+    <section class="results-section" id="results"><div class="section-wrap results-layout">
+      <div><div class="eyebrow">YOUR JOURNEY</div><h2>Your progress,<br><em>at a glance.</em></h2><p class="muted">Your activity results are stored only in this browser on this device. They are not sent to a server.</p><button class="button button-light" id="downloadReport">Download report ↓</button> <button class="button button-outline" id="clearHistory">Clear history</button></div>
+      <div class="history-panel"><div class="history-head"><h3>Recent activity</h3><span id="sessionCount">0 sessions</span></div><div id="historyList" class="history-list"><div class="empty-state"><span>◷</span><b>Your journey starts here</b><p>Complete an activity to see your results.</p></div></div></div>
+    </div></section>
+
+    <section class="section-wrap learn-section" id="learn">
+      <div class="section-heading"><div><div class="eyebrow">LEARN & UNDERSTAND</div><h2>Curiosity is a good start<span class="period">.</span></h2></div><p>Learn about cognitive health and understand the difference between practice activities and clinical screening.</p></div>
+      <div class="learn-grid">
+        <article><span class="learn-number">01</span><h3>What is cognitive health?</h3><p>It includes abilities such as remembering, paying attention, communicating, learning and solving problems.</p></article>
+        <article><span class="learn-number">02</span><h3>What about clinical tests?</h3><p>Tools such as MoCA and MMSE are used in appropriate clinical settings. Some instruments have permission or licensing requirements. This demo does not reproduce their official questions.</p></article>
+        <article><span class="learn-number">03</span><h3>When should I seek help?</h3><p>If memory or thinking changes persist, worsen, or affect daily life, speak with a qualified healthcare professional. A website activity cannot replace an evaluation.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">m</span><span>mindcare<span class="brand-light"> assess</span></span></a><p>Student project · Educational demonstration only</p><a href="#home">Back to top ↑</a></footer>
+
+  <div class="modal-backdrop" id="activityModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close activity">×</button>
+      <div class="eyebrow" id="modalEyebrow">ACTIVITY</div><h2 id="modalTitle">Activity</h2><div id="modalBody"></div>
+      <div class="modal-actions"><button class="button button-outline" id="cancelActivity">Close</button><button class="button button-dark" id="nextStep">Start <span>→</span></button></div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
